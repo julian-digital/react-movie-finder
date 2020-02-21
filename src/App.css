@@ -1,0 +1,123 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/* .next-steps .fa-link {
+  margin-right: 5px;
+}
+
+/* Fix for use only flexbox in content area */
+.next-steps .row {
+  margin-bottom: 0;
+}
+
+.next-steps .col-md-5 {
+  margin-bottom: 3rem;
+}
+*/ @media (max-width: 768px) {
+  .next-steps .col-md-5 {
+    margin-bottom: 0;
+  }
+}
+
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  nav.navbar .navbar-collapse {
+    position: absolute;
+  }
+  nav.navbar .logo.navbar-brand {
+    flex: 1;
+    text-align: center;
+    color: white;
+  }
+}
+nav.navbar .logo.navbar-brand,
+nav.navbar .navbar-collapse a.dropdown-toggle::after {
+  color: white;
+}
+section {
+  padding-top: 1rem;
+}
+.card {
+  height: calc(100% - 2rem);
+  margin: 0 0 2rem 0;
+}
+.card .card-img-top {
+  position: relative;
+  overflow: hidden;
+  height: 312px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.movie-cover {
+  position: relative;
+  overflow: hidden;
+  height: 312px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card .card-img-top figure,
+.movie-cover figure {
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.card .card-body {
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  display: flex;
+}
+.card .card-body .card-title {
+  flex: 1;
+}
+.crop-text-2 {
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+nav ul.pagination {
+  justify-content: center;
+}
+/***
+ *  Simple Pure CSS Star Rating Widget Bootstrap 4 
+ * 
+ *  www.TheMastercut.co
+ *  
+ ***/
+.starrating {
+  flex-flow: row nowrap;
+  display: flex;
+  justify-content: center;
+}
+.starrating > input {
+  display: none;
+} /* Remove radio buttons */
+
+.starrating > label:before {
+  content: "\f005"; /* Star */
+  margin: 2px;
+  font-size: 2rem;
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+.starrating > label {
+  color: #222222; /* Start color when not clicked */
+}
+
+.starrating > input:checked ~ label {
+  color: #ffca08;
+} /* Set yellow color when star checked */
+
+.starrating > input:hover ~ label {
+  color: #ffca08;
+} /* Set yellow color when star hover */
